@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'aesthetik_scriptregular';
+    src: url('../fonts/aesthetik_script_demo-webfont.woff2') format('woff2'),
+         url('../fonts/aesthetik_script_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #7b7b7b;
+    @include respond-to('small') {
+        //font-size: 12px;
+    }
+}
+
+.login-screen.device-flex .col-md-6 {
+    @include respond-to('tablet') {
+        flex: 0 0 100%;
+        max-width: 100%;
+        font-size: 12px;
+    }
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.btn.btn-primary.btn-sm {
+    padding: $padd8 $padd25;
+}
+
+button.btn.btn-primary,
+.btn.btn-primary {
+    font-size: 14px;
+    background-color: #9c9eca;
+    border: 1px solid transparent;
+    padding:0 15px;
+    border-radius: $padd50;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 42px;
+    
+}
+
+button.btn.btn-primary:hover,
+button.btn.btn-primary:focus,
+button.btn.btn-primary.focus,
+button.btn.btn-primary:not(:disabled):not(.disabled):active,
+button.btn.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: darken($btnprimery, 15%);
+    outline: none;
+    border: 1px solid darken($btnprimery, 15%);
+}
+
+.changeQueryMsg {
+    padding-top: 10px;
+    color: $btnprimery;
+    text-align: center;
+    font-size: 13px;
+}
+
+.form-control:focus {
+    box-shadow: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    font-family: inherit;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #54bde2;
+}
+
+a:hover {
+    color: #4fc1e6;
+}
+
+.form-control{
+    border-color: #999999;
+    border-radius: 30px;
+    color: #808080;
+    font-size: $font14;
+}
+.cancelBtn{
+    text-transform: uppercase;
+    font-size: $font16;
+    color: #999999;
+}
+.error{color: red; 
+    display: none;
+}
+
+.btn-link{
+    color: #54bde2;
+    text-transform: uppercase;
+    font-weight: 700;
+    &:hover{
+        text-decoration: none;
+        color: #54bde2;
+    }
+}
+
+button:focus,*{outline: none;}
