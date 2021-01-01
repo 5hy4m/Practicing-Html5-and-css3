@@ -1,0 +1,638 @@
+.fixedWidth{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.learnBanner{
+    background: #4fc1e6;
+    position: relative;
+    @include respond-to('small') {
+        padding-bottom: 60px;
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 356px;
+        height: 154px;
+        background: url(../images/flower.png) no-repeat;
+    }
+ 
+    & .learnBannerImage{
+        display: inline-block;
+        vertical-align: middle;
+        width: 394px;
+        overflow: hidden;
+        border: 1px solid #4fc1e6;
+        border-radius: 30px;
+        position: relative;
+        top: 60px;
+        @include respond-to('medium') {
+            width: 300px;
+        }
+        @include respond-to('small') {
+            top: 0;
+            text-align: center;
+            margin: 40px 0;
+            left: 50%;
+            transform: translate(-50%) !important;
+        }
+        & img{
+            max-width: 100%;
+        }
+    }
+    & .learnBannerContent{
+        vertical-align: middle;
+        display: inline-block;
+        color: #ffffff;
+        padding-left: 60px;
+        width: calc(100% - 400px);
+      
+        @include respond-to('medium') {
+            width: calc(100% - 310px);
+        }
+        @include respond-to('small') {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+        }
+        & h2{
+            font-size: 43px;
+            font-weight: 600;
+            @include respond-to('tablet-pro') {
+                font-size: $font32;
+            }
+            @include respond-to('small') {
+                font-size: $font20;
+            }
+        }
+        & p{
+            font-size: $font20;
+            font-weight: 600; 
+            @include respond-to('tablet-pro') {
+                font-size: $font18;
+            }
+            @include respond-to('small') {
+                font-size: $font16;
+            }
+        }
+    }
+}
+
+.foundationMian{
+    margin-top: 160px;
+    text-align: center;
+    @include respond-to('small') {
+        margin-top: 45px;
+    }
+    & .foundationHead{
+        margin-bottom: 60px;
+        & h2{
+            font-weight: 600;
+            margin-bottom: 0;
+            font-size: $font30;
+            @include respond-to('small') {
+                font-size: $font20;
+            }
+        }
+        & p{
+            font-size: $font20;
+            color: #a6a6a6;
+            @include respond-to('small') {
+                font-size: $font16;
+            }
+        }
+    }
+    & .foundationWrap{
+        padding: 0 15px;
+        & .learingItems{
+            padding: 0 20px;
+            & .courseWrap{
+                @include respond-to('small') {
+                    margin-bottom: 20px;
+                }
+                & .content{
+                    max-width: 312px;
+                    margin: 0 auto;
+                    color: #a6a6a6;
+                    font-weight: normal;
+                    font-size: $font14;
+                }
+            }
+        }
+    }
+}
+.widthmd{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.widthsm{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.playWrap{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: #54bde2 url(../images/playicon.png) no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+}
+.programsWrap{
+    background: #ffffff;
+    margin-top: 98px;
+    position: relative;
+    padding: 58px 20px 0 20px;
+    @include respond-to('small') {
+        padding: 34px 20px 0 20px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    &:before{
+        background: #d0cb50;
+        content: '';
+        width: 100%;
+        height: 368px;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 40px;
+        width: 356px;
+        height: 154px;
+        background: url(../images/flower.png) no-repeat;
+    }
+    & h2{
+        color: #ffffff;
+        font-size: $font30;
+        position: relative;
+        margin-bottom: 64px;
+        @include respond-to('small') {
+            font-size: $font20; 
+        }
+        & .pach{
+            &:before{
+                background: #ffffff;
+            }
+        }
+    }
+    & .btn.btn-primary {
+        background: #4fc1e6;
+        margin: 34px 0;
+        @include respond-to('small') {
+            margin: 10px 0;
+        }
+        @include respond-to('x-small') {
+            margin: 0px 0 10px 0;
+        }
+    }
+    & .programsCard{
+        @include respond-to('small') {
+            margin-bottom: 40px;
+        }
+    }
+}
+.programsCard{
+    background: #ffffff;
+    border-radius: 30px;
+    max-width: 540px;
+    box-shadow:0 0 32px rgba(84, 189, 226, 0.36);
+    margin: 0 auto;
+    & .videoWrap{
+        border-radius: 30px;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        & img{
+            max-width: 100%;
+        }
+    }
+    & .programsContent{
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: center;
+        padding: 10px 0;
+        line-height: 56px;
+        @include respond-to('small') {
+            line-height: 38px;
+        }
+        & span{
+            font-size: $font16;
+            font-weight: 600;
+            width: 100%;
+            color: #6d6d6d;
+            @include respond-to('small') {
+                font-size: $font14;
+                text-align: left;
+                padding-left: 20px;
+            }
+            @include respond-to('x-small') {
+                font-size: $font14;
+            }
+            @include respond-to('xxx-small') {
+                font-size: $font13;
+            }
+            @include respond-to('xs-small') {
+                font-size: $font12;
+                padding-left: 14px;
+            }
+        }
+        & a{
+            width: 100%;
+            color: #54bde2;
+            font-weight: 600;
+            text-decoration: none;
+            @include respond-to('small') {
+                font-size: $font14;
+            }
+            @include respond-to('x-small') {
+                font-size: $font12;
+            }
+        }
+    }
+}
+
+.termWrap{
+    color: #ffffff;
+    max-width: 784px;
+    padding: 34px;
+    background: #9c9eca;
+    margin: 20px auto;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 0 32px rgba(156, 158, 202, 0.36);
+    @include respond-to('small') {
+        padding: 20px;
+    }
+    & p{
+        position: relative;
+        font-size: 30px;
+        line-height: 38px;
+        @include respond-to('small') {
+            font-size: $font18;
+            line-height: 20px;  
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(../images/icons/cots_big_left.png) no-repeat;
+            width: 48px;
+            height: 28px;
+            @include respond-to('small') {
+                width: 28px; 
+                background-size: contain;
+            }
+        }
+        & b{
+            background: url(../images/icons/cots_big_left.png) no-repeat;
+            width: 48px;
+            height: 28px;
+            display: inline-block;
+            position: relative;
+            right: 46px;
+            @include respond-to('small') {
+                width: 28px;
+                background-size: contain;
+                right: 14px;
+                top: 7px;
+            }
+          
+        }
+    }
+    & span{
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+.galleryWrap{
+    
+    margin-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    @include respond-to('small') {
+        padding-bottom: 10px;
+        padding-top: 4px;
+    }
+
+ 
+    & .galleryHead{
+        font-size: $font30;
+        color: #686868;
+        font-weight: 600;
+        @include respond-to('small') {
+            font-size: $font20; 
+        }
+    }
+    & .gallerySlider {
+        margin-top: 32px;
+        margin-bottom: 30px;
+        @include respond-to('small') {
+            padding: 0 10px;
+        }
+        
+        & .itemsSlide {
+            text-align: center;
+            padding: 0 10px;
+            & img{
+                margin: 0 auto;
+                border-radius: 20px;
+                max-width: 100%;
+            }
+        }
+        & .slick-arrow{
+            width: 15px;
+            height: 30px;
+            background-size: 15px !important;
+        }
+        & .slick-prev{
+            left: -5px;
+            background: url(../images/icons/g_left_arrow.png);
+        }
+        & .slick-next{
+            right: -5px;
+            background: url(../images/icons/g_right_arrow.png);
+        }
+
+        
+
+    }
+
+}
+.artCardWrap{
+    max-width: 740px;
+    margin: 12px auto;
+    @include respond-to('small') {
+        margin-bottom: 10px;
+    }
+}
+.artCard{
+    text-align: center;
+    color: #ffffff;
+    @include respond-to('small') {
+        margin:6px 0 15px 0px;
+    }
+    & span{
+        display: inline-block;
+        box-shadow: 0 0 10px rgba(84, 189, 226, 0.36);
+        max-width: 180px;
+        max-height: 140px;
+        overflow: hidden;
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+    & h2{
+        font-size: $font16;
+        font-weight: 600;
+        margin-bottom: 0;
+        @include respond-to('small') {
+            font-size: $font14; 
+        }
+    }
+    & b{
+        font-size: $font18;
+        font-weight: 600;
+        @include respond-to('small') {
+            font-size: $font16; 
+        }
+    }
+}
+.discoverWrap{
+    background: #f0a75a;
+    padding-top: 75px;
+    padding-bottom: 160px;
+    position: relative;
+    @include respond-to('small') {
+        padding-top: 46px;
+    }
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 60px;
+        width: 300px;
+        height: 154px;
+        background: url(../images/flower_left.png) no-repeat;
+    }
+
+    & .discoverTitle{
+     
+        color: #ffffff;
+        @include respond-to('small') {
+            font-size: $font20;
+            text-align: center;
+        }
+        & h2{
+            @include respond-to('small') {
+                font-size: $font20;
+            }
+        }
+        & .pach{
+            &:before{
+                background: #ffffff;
+            }
+        }
+    }
+    & .btn.btn-primary{
+        background: #4fc1e6;
+        margin-top: 40px;
+        @include respond-to('small') {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.disTermWrap{
+    margin-top: -70px;
+    padding: 0 20px;
+    & .termWrap{
+        max-width: 1024px;
+        padding: 40px 160px;
+        @include respond-to('small') {
+            padding: 40px;
+        }
+        @include respond-to('small') {
+            padding: 20px;
+        }
+       
+        & p{
+            font-size: $font24;
+            line-height: 28px;
+            font-weight: normal;
+            @include respond-to('small') {
+                font-size: $font20;  
+            }
+            &:before{
+                background-size: contain;
+                width: 28px;
+                left: 10px;
+                top: 5px;
+            }
+        }
+    }
+}
+
+
+.learnTeacherWrap{
+   
+    & .learnTeacherWidth{
+        margin: 30px auto;
+        max-width: 1285px;
+        text-align: center;
+        background: #ffffff;
+        box-shadow: 0 0 32px rgba(84, 189, 226, 0.36);
+        padding: 56px 90px;
+        border-radius: 30px;
+        position: relative;
+         
+        @include respond-to('medium') {
+            padding: 56px 40px;  
+        }
+        @include respond-to('small') {
+            padding: 56px 20px;   
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        &:before{
+            content: '';
+            position: absolute;
+            bottom: 24%;
+            left: -34px;
+            background: url(../images/about/bottom_left_stars.png) no-repeat;
+            width:96px;
+            height: 186px;
+            z-index: 1;
+            @include respond-to('medium') {
+                width: 60px;
+                background-size: contain;
+            }
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            bottom: 52%;
+            right: -31px;
+            background: url(../images/about/bottom_right_stars.png) no-repeat;
+            width:163px;
+            height: 250px;
+            @include respond-to('medium') {
+                width: 92px;
+                background-size: contain;
+            }
+        }
+    }
+    & h2{
+        color: #8b8b8b;
+        font-weight: 600;
+        margin-bottom: 56px;
+        @include respond-to('medium') {
+            font-size: $font24;
+        }
+        @include respond-to('small') {
+            font-size: $font20;
+        }
+    }
+}
+.learnTeachers{
+    text-align: center;
+    & .learnTeachersList{
+        width: 33%;
+        display: inline-flex;
+        margin-bottom: 54px;
+        padding: 0 45px;
+        @include respond-to('medium') {
+            padding: 0 10px; 
+            width: 48%;
+        }
+        
+        @include respond-to('x-small') {
+            width: 100%;
+        }
+    }
+}
+
+.communityForm{
+    position: relative;
+    padding-top: 50px;
+    &::before{
+        height: 1px;
+        width: calc(100% + 132px);
+        background: #f1f1f1;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -65px;
+    }
+    & form{
+        max-width: 394px;
+        margin: 0 auto;
+        & p{
+            color: #e59e9b;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+            & fieldset{
+                margin-bottom: 15px;
+                input {
+                width: 100%;
+                border: 1px solid #8b8b8b;
+                border-radius: 20px;
+                height: 41px;
+                padding: 0 40px 0 20px;
+            }
+            & .btn.btn-primary{
+                background: #54bde2;
+                padding: 0 30px;
+                &:hover{
+                    border:1px solid
+                     #54bde2;
+                }
+            }
+        }
+    }
+}
+
+.videoModalWrap{
+    width: 100%;
+    height: 350px;
+    @include respond-to('small') {
+        height: auto;
+    }
+    & iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.whatupWrap{
+    margin-top: 40px;
+    & span{
+        color: #6d6d6d;
+    }
+    & a{
+        color: #54bde2;
+        font-weight: 700;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,580 @@
+.aboutHero{
+    margin:88px 0 144px 0;
+    overflow: hidden;
+    position: relative;
+    @include respond-to('small') {
+         margin:40px 0 144px 0;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 307px;
+        height: 154px;
+        background: url(../images/about/pinkright.png);
+    }
+    & .aboutLeft{
+        padding-right: 10px;
+        @include respond-to('small') {
+            padding-right: 0;
+        }
+        & .pach:before{
+            height: 14px;
+        }
+        & .topContent{
+            @include respond-to('small') {
+                text-align: center;
+            }
+            & h2{
+                color: #686868;
+                font-size: $font30;
+                font-weight: 600;
+                max-width: 465px;
+                @include respond-to('small') {
+                    font-size: $font20;
+                     max-width: 100%;
+                }
+            }
+            & p{
+                color: #686868;
+                font-size: $font16;
+                font-weight: 600;
+                max-width: 366px;
+                margin-top: 24px;
+                @include respond-to('small') {
+                    font-size: $font14;
+                    max-width: 100%;
+                }
+                & .pach{
+                    &:before{
+                       @include respond-to('small') {
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        & .aboutArrow{
+            position: relative;
+            margin: 0 0 0 -140px;
+            @include respond-to('small') {
+                margin-top: 76px;
+            }
+             & img{
+               @include respond-to('medium') {
+                    max-width: 100%;
+                } 
+            }
+            & b{
+                width: 59px;
+                height: 63px;
+                position: absolute;
+                right: 102px;
+                top: -73px;
+                background: url(../images/about/fly.png) no-repeat;
+                display: inline-block;
+                @include respond-to('x-large') {
+                    right: 12px;
+                }
+                @include respond-to('medium') {
+                    right: -35px;
+                }
+                @include respond-to('small') {
+                        right: 54px;
+                }
+                @include respond-to('x-small') {
+                        right: 0px;
+                }
+                @include respond-to('xx-small') {
+                        right: -20px;
+                }
+                @include respond-to('xxx-small') {
+                        right: -30px;
+                }
+            }
+        }
+        & .bottomContent{
+            margin-top: 48px;
+            @include respond-to('small') {
+                text-align: center;
+            }
+            & span{
+                font-family: 'aesthetik_scriptregular';
+                color: #f9a39f;
+                font-size: 28.5px;
+                font-weight: bold;
+                margin-bottom: 26px;
+                display: inline-block;
+                @include respond-to('small') {
+                    font-size: 22px;
+                }
+            }
+            & h4{
+                color: #686868;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            & p{
+                color: #999999;
+                max-width: 442px;
+                margin-top: 18px;
+            }
+        }
+    }
+    & .aboutHeroImg{
+        padding-left: 20px;
+        @include respond-to('small') {
+            margin-bottom: 20px;
+        }
+    }
+    & .aboutHeadImg_dsk{
+        @include respond-to('small') {
+            display: none;
+        }
+    }
+    & .aboutHeadImg_mobile{
+        display: none;
+        @include respond-to('small') {
+            display: block;
+            margin-top: 15px;
+        }
+    }
+}
+.babyWrap{
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 64%;
+        transform: translateY(-50%);
+        width: 374px;
+        height: 194px;
+        background: url(../images/about/pink_left.png);
+    }
+
+& .babyColorWrap{
+    max-width: 1180px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 60px rgba(79, 193, 230, 0.46);
+    padding: 40px;
+    @include respond-to('small') {
+       padding: 20px; 
+        max-width: 94%;
+    }
+    & .babyColorImg{
+         border-radius: 10px;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+        width: 456px;
+        margin-top: -130px;
+        @include respond-to('small') {
+            max-width: 456px; 
+            width: auto;
+        }
+        & img{
+            max-width: 100%;
+        }
+    }
+    
+    & .babyColorContent{
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(100% - 460px);
+        @include respond-to('small') {
+           width: 96%;
+            text-align: center;
+            margin-top: 30px;
+        }
+        & .babyColormid{
+            max-width: 436px;
+            margin: 0 auto;
+            text-align: center;
+            & h2{
+                font-family: 'aesthetik_scriptregular';
+                color: #e59e9b;
+                font-size: 25px;
+                font-weight: 600;
+                margin-bottom: 14px;
+            }
+            & p{
+                color: #999999;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+& .babyBoos{
+    max-width: 1180px;
+    margin: 110px auto;
+    @include respond-to('small') {
+        margin: 40px auto;
+    }
+    & li{
+        text-align: center;
+        @include respond-to('small') {
+            margin-bottom: 30px;
+        }
+        & h2{
+              letter-spacing: 1.88px;
+        font-family: 'aesthetik_scriptregular';
+        color: #e59e9b;
+        font-weight: bold;
+        font-size: 23px;
+        max-width: 230px;
+        margin: 8px auto;
+            @include respond-to('small') {
+              font-size: $font18;  
+            }
+        }
+    }
+}
+}
+
+
+
+
+.teamWrap{
+    background: #d0cb50;
+    padding: 70px 0 310px 0;
+    position: relative;
+    @include respond-to('xx-small') {
+        text-align: center;
+    }
+    @include respond-to('xxx-small') {
+        padding-bottom: 250px;
+    }
+ 
+     &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 8%;
+        width: 356px; height: 156px;
+        background: url(../images/flower_left.png) no-repeat;
+    }
+       &:after{
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 37%;
+        width: 356px; 
+        height: 156px;
+        background: url(../images/flower.png) no-repeat;
+    }
+    & .teamListWrap {
+         margin-bottom: 30px;
+            & .teamList{
+                width: 48%;
+                display: inline-block;
+                vertical-align: top;
+                margin-bottom: 85px;
+                @include respond-to('small') {
+                    width: 100%;
+                }
+                &:last-child{
+                    margin-bottom: 20px;
+                    position: relative;
+                    top: -68px;
+                    @include respond-to('small') {
+                       top:0; 
+                    }
+                }
+                & .commanCard{
+                    min-height: 290px;
+                }
+            }
+        
+        }
+     & .teamListOtherWrap {
+         margin-bottom: 30px;
+         @include respond-to('small') {
+             margin-top: 65px;
+         }
+            & .teamListOther{
+                width: 48%;
+                display: inline-block;
+                vertical-align: top;
+                margin-bottom: 130px;
+                z-index: 1;
+                 @include respond-to('small') {
+                    width: 100%;
+                     margin-bottom: 88px;
+                }
+                &:nth-child(2n + 2){
+                   margin-bottom: 20px;
+                    position: relative;
+                    top: -80px;
+                     @include respond-to('small') {
+                       top:0; 
+                       margin-bottom: 88px;
+                    }
+                }
+                & .commanCard{
+                    min-height: 290px;
+                }
+            }
+        
+        }
+    & .cardAbout{
+        padding: 0 20px;
+        @include respond-to('small') {
+            padding: 0;
+        }
+    }
+    & .teamHead{
+        color: #ffffff;
+        margin: 0 0 120px 50px;
+        @include respond-to('small') {
+            margin-left: 0;
+        }
+         & h2{
+            display: inline-block;
+            font-size: $font30;
+            font-weight: 600;
+            
+        }
+        & p{
+     
+            font-size: $font20;
+            font-weight: 600;
+            & .pach{
+                &:before{
+                    background: #ffffff;
+                    height: 14px;
+                }
+            }
+            
+        }
+    }
+}
+
+.commanCard{
+    background: #ffffff; border-radius: 25px;
+    padding: 30px;
+ 
+    & .cardHead{
+        & span{
+            border-radius: 20px;
+            display: inline-block;
+            overflow: hidden;
+            width: 174px;
+            margin-top: -100px;
+            background: #f2f2f2;
+            @include respond-to('xx-small') {
+               width: 145px;
+            }
+            @include respond-to('xxx-small') {
+                
+            }
+        }
+        & h2{
+            display: inline-block;
+    vertical-align: bottom;
+            font-weight: 600;
+            padding-left: 31px;
+            width: calc(100% - 180px);
+            color: #6d6d6d;
+            font-size: $font18;
+            @include respond-to('xx-small') {
+                padding-left: 18px;
+                width: calc(100% - 150px);
+                text-align: left;
+            }
+            @include respond-to('xxx-small') {
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+            }
+            & p{
+                @include respond-to('xxx-small') {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        & p{
+            display: block;
+            font-size: $font14;
+            color: #999999;
+            font-weight:normal;
+            padding-top: 2px;
+            
+        }
+    }
+    & .cardContent{
+        margin-top: 27px;
+        color: #999999;
+        font-weight: 600;
+        @include respond-to('xxx-small') {
+            margin-top: 10px;
+        }
+    }
+}
+.ourAdvisors{
+        max-width: 1250px;
+    margin: -324px auto 60px;
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(84, 189, 226, 0.36);
+    padding: 0 150px;
+    border-radius: 30px;
+    position: relative;
+    @include respond-to('small') {
+        padding: 0 20px;
+        width: 94%;
+    }
+    & .starT_left{
+        position: absolute;
+        width: 186px;
+        height: 275px;
+        display: inline-block;
+        background: url(../images/about/top_left_stars.png) no-repeat;
+        left: -39px;
+        top: -62px;
+        @include respond-to('x-small') {
+            width: 130px;
+        }
+        & img {
+             @include respond-to('x-small') {
+                max-width: 100%;
+            }
+        }
+    }
+    & .starT_right{
+        position: absolute;
+        width: 157px;
+        height: 158px;
+        display: inline-block;
+        background: url(../images/about/top_right_stars.png) no-repeat;
+        right: -30px;
+        top: -30px;
+    }
+    & .starB_left{
+        position: absolute;
+        width: 157px;
+        height: 186px;
+        display: inline-block;
+        background: url(../images/about/bottom_left_stars.png) no-repeat;
+        left: -35px;
+    bottom: 104px;
+    }
+    & .starB_right{
+                position: absolute;
+        width: 163px;
+    height: 259px;
+        display: inline-block;
+        background: url(../images/about/bottom_right_stars.png) no-repeat;
+        right: -35px;
+    bottom: -44px;
+    }
+}
+.ourAdvisorsContent{
+
+    text-align: center;
+    
+    
+    & li{
+        width: 33%;
+        display: inline-block;
+        margin-bottom: 53px;
+        @include respond-to('small') {
+            width: 48%;
+        }
+         @include respond-to('xx-small') {
+            width: 100%;
+        }
+    }
+}
+
+
+.ourHad{
+    color: #8b8b8b;
+    font-size: 30px;
+    padding: 54px 0 30px 0;
+    text-align: center;
+    font-weight: 600;
+}
+.ourAdvisorsCard{
+    & .ourAdvisorsImg{
+        display: inline-block;
+        width: 125px;
+        height: 144px;
+        border-radius: 8px;
+        background: #f2f2f2;
+        overflow: hidden;
+        margin-bottom: 20px;
+        & img{
+            width: 100%;
+            transform: scale(1.13);
+
+        }
+    }
+    & h3{
+        color: #6d6d6d;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+    & p{
+        color: #999999;
+        font-size: 12.5px;
+        margin-top: 0px;
+        margin-bottom: 0;
+        &.cityText{
+            margin-bottom: 25px;
+        }
+    }
+    
+}
+
+
+
+.readModalWrap{
+    text-align: center;
+    padding: 10px;
+    & .readModalHead{ 
+        & h2{
+            color: #6d6d6d;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            
+        }
+        & .teamPicImg{
+            display: inline-block;
+            width: 125px;
+            height: 144px;
+            border-radius: 8px;
+            background: #f2f2f2;
+            overflow: hidden;
+            margin-bottom: 5px;
+            & img{
+                transform: scale(1.2);
+            }
+    }
+        & p{
+                line-height: 18px;
+        }
+        }
+}
+.modal-header .close span{
+    font-size: 32px; font-weight: normal;
+}
+.modal-content{
+    border-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(84,189,226,.7);
+}
+.modal-footer{
+    text-align: center;
+    & .btn{
+        margin: 0 auto;
+        min-width: 100px;
+        height: 42px;
+    }
+}

@@ -1,0 +1,161 @@
+// VARUN KUMAR 
+// PHONE NO:- 9311595880, 9560780185
+html,
+body {
+    height: 100%;
+}
+
+$break-small: 749px;
+$box-shadow: 2px 2px 2px #e2e1e1;
+$box-shadow-inner: 1px 0px 15px #e2e1e1;
+$box-shadow-inner-second: 1px 0px 5px #e2e1e1;
+$border-radius: 5px;
+$border-radius10: 10px;
+$border-radius-fifth: 50%;
+//FONTS SIZES 
+$font10: 0.625rem; //10px
+$font11: 0.6875rem; //11px
+$font12: 0.75rem; //12px
+$font13: 0.8125rem; //13px
+$font14: 0.875rem; //14px
+$font15: 0.9375rem; //15px
+$font16: 1rem; //16px
+$font17: 1.0625rem; //17px
+$font18: 1.125rem; //18px
+$font19: 1.1875rem; //19px
+$font20: 1.25rem; //20px
+$font22: 1.375rem; //22px
+$font23: 1.4375rem; //23px
+$font24: 1.5rem; //24px
+$font25: 1.5625rem; //25px
+$font26: 1.625rem; //26px
+$font27: 1.6875rem; //27px
+$font28: 1.75rem; //28px
+$font29: 1.8125rem; //29px
+$font30: 1.875rem; //30px
+$font31: 1.9375rem; //31px
+$font32: 2rem; //32px
+$font33: 2.0625rem; //33px
+$font34: 2.125rem; //34px
+$font35: 2.1875rem; //35
+$font36: 2.25rem; //36
+$font37: 2.3125rem; //37
+$font38: 2.375rem; //38
+$font39: 2.4375rem; //39
+$font40: 2.5rem; //40
+$font41: 2.5625rem; //41
+$font42: 2.625rem; //42
+$font43: 2.6875rem; //43
+$font44: 2.75rem; //44
+$font45: 2.8125rem; //45
+$font50: 3.125rem; //50px
+$font60: 3.75rem; //60px
+// FONT WEIGHT
+$font700: 700;
+$font900: 900;
+//TEXT COLOR
+$orang: #ffa700;
+$white:#ffffff;
+$headblue:#0d1e64;
+$skyblue:#2cacad;
+$ltblue:#3ca9d2;
+$greybrd: #e9e9e9;
+$headingblue:#0b94c7;
+$ltgrey:#dbdbdb;
+$intputcolor:#707070;
+$backgroundhover:#48c196;
+$textdark:#292929;
+$textlight:#282828;
+$textline:#4a4a4a;
+$btnprimery:#e3000f;
+$text-gray:#bebebe;
+$black: #000000;
+$headingray:#737373;
+$iconictext:#e5e5e5;
+$bordercolor:#cccccc;
+$bordcolor:#bebebe;
+$closebtn:#8e8e8e;
+$brand-gray:#787878;
+$ratingstar:#ddad04;
+// PADDING
+$padd0: 0px;
+$padd2: 2px;
+$padd4: 4px;
+$padd5: 5px;
+$padd6: 6px;
+$padd7: 7px;
+$padd8: 8px;
+$padd10: 10px;
+$padd11: 11px;
+$padd12: 12px;
+$padd15: 15px;
+$padd16: 16px;
+$padd20: 20px;
+$padd25: 25px;
+$padd28: 28px;
+$padd30: 30px;
+$padd35: 35px;
+$padd40: 40px;
+$padd48: 48px;
+$padd45: 45px;
+$padd50: 50px;
+$padd55: 55px;
+$padd60: 60px;
+$padd70: 70px;
+$padd72: 72px;
+$padd75: 75px;
+$padd80: 80px;
+$padd85: 85px;
+$padd90: 90px;
+$padd100: 100px;
+//MARGIN
+$marg0: 0px;
+$marg1: 1px;
+$marg2: 2px;
+$marg3: 3px;
+$marg4: 4px;
+$marg5: 5px;
+$marg6: 6px;
+$marg8: 8px;
+$marg10: 10px;
+$marg12: 12px;
+$marg15: 15px;
+$marg20: 20px;
+$marg23: 23px;
+$marg25: 25px;
+$marg30: 30px;
+$marg35: 35px;
+$marg40: 40px;
+$marg45: 45px;
+$marg50: 50px;
+$marg55: 55px;
+$marg58: 58px;
+$marg60: 60px;
+$marg70: 70px;
+$marg75: 75px;
+$marg80: 80px;
+$marg100: 100px;
+//BRACKPOINTS
+$breakpoints: ('xs-small': ( max-width: 320px), 'xxxx-small': ( max-width: 380px), 'ios-small': ( max-width: 414px), 'xxx-small': ( max-width: 420px), 'xx-small': ( max-width: 480px), 'x-small': ( max-width: 540px), 'small': ( max-width: 767px), 'tablet': ( max-width: 768px), 'medium': ( max-width: 998px), 'tablet-pro': ( max-width:1025px), 'x-large': ( max-width: 1200px), 'large': ( min-width: 1140px)) !default;
+// Mixin to manage responsive breakpoints
+/// @author Hugo Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin respond-to($breakpoint) {
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $breakpoint) {
+        // Prints a media query based on the value
+        @media #{inspect(map-get($breakpoints, $breakpoint))} {
+            @content;
+        }
+    } // If the key doesn't exist in the map
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "+"Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+}
+
+// end algo works work//
+@mixin headline ($color, $size) {
+    color: $color;
+    font-size: $size;
+}

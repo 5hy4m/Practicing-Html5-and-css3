@@ -1,0 +1,258 @@
+header {
+    display: inline-block;
+    width: 100%;
+    z-index: 5;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+    @include respond-to('tablet') {
+        background: rgba(255, 255, 255, 1);
+    }
+    & .logo{
+        display: inline-block;
+            margin: 1px 0 4px 0;
+        vertical-align: middle;
+        @include respond-to('small') {
+            width: 120px;
+            margin-top: 0;
+        }
+        & a{
+            
+        @include respond-to('small') {
+            line-height: 10px;
+            display: inline-block;
+            position: relative;
+            top: -4px;
+        }
+            
+        }
+        & img{
+            max-width: 100%;
+        }
+    }
+    
+    & .loginWrap{
+       float: right;
+        margin-top: 12px;
+        @include respond-to('small') {
+            margin-top: 12px;
+        }
+        & .loginLink{
+            font-weight: bold;
+            color: #9c9eca;
+            text-transform: uppercase;
+            margin: 0 30px 0 0;
+             vertical-align: middle;
+            @include respond-to('x-large') {
+                 margin: 0 5px;
+            }
+            @include respond-to('xx-small') {
+                font-size: 13px;
+            }
+            @include respond-to('xs-small') {
+              font-size: 11px;  
+                margin: 0 1px;
+            }
+        }
+        & .btn{
+            font-weight: bold;
+            color: #ffffff;
+            background: #9c9eca;
+            border-radius: 18px;
+            vertical-align: middle;
+            line-height: 36px;
+            @include respond-to('small') {
+                display: none;
+            }
+        }
+    }
+}
+
+header .navbar {
+    padding: 0;
+    display: inline-block;
+    margin-left: 45px;
+    @include respond-to('x-large') {
+      margin-left: 25px;  
+    }
+    @include respond-to('medium') {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 61px;
+        background: #ffffff;
+        z-index: 9;
+
+    }
+    @include respond-to('small') {
+        margin-top: 53px;
+    }
+}
+
+header .navbar-light .navbar-nav .nav-link { 
+    color: #4fc1e6;
+    font-size: $font14;
+    
+    & strong{
+        margin-right: 8px;
+        vertical-align: middle;
+    }
+    & span{
+        vertical-align: middle;
+        position: relative;
+    }
+   
+}
+
+header .navbar-light .navbar-nav .nav-item {
+    position: relative;
+    margin-right: 25px;
+    @include respond-to('x-large') {
+       margin-right: 18px;  
+    }
+    @include respond-to('tablet-pro') {
+        margin-right: 12px;
+        
+    }
+    @include respond-to('medium') {
+        padding: 8px 30px;
+        
+    }
+}
+
+header .navbar-light .navbar-nav .nav-item:hover .dropdown-menu,
+header .navbar-light .navbar-nav .nav-item .dropdown-menu.show {
+    display: block;
+    margin-top: 0;
+    background: #ffffff;
+    color: #777;
+    width: 190px;
+}
+
+header .navbar-light .navbar-nav .nav-item .dropdown-menu .nav-link {
+    padding: 8px 20px;
+}
+
+ 
+
+header .navbar-light .navbar-nav .nav-item.active {
+    background: #ffffff;
+}
+
+ 
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #4fc1e6;
+    background: #ffffff;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+    background-color: #fff;
+    display: none;
+    @include respond-to('medium') {
+        display: inline-block;
+    }
+    @include respond-to('small') {
+        padding: 0;
+        position: relative;
+        top: 2px;
+    }
+
+}
+    .navbar-toggler{
+     
+        & .navbar-toggler-icon{
+            background-image: url(../images/icons/menu.png);
+            background-size: contain;
+            }
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus{
+      color: #4fc1e6;
+    &:before{
+        background: #4fc1e6;
+        width: calc(100% - 14px);
+        height: 4px;
+        content: "";
+        position: absolute;
+        left: 7px;
+        bottom: 2px;
+        border-radius: 2px;
+    }
+}
+
+.totopHeader{ 
+    background: #f0a75a;
+    color: #ffffff;
+    text-align: center;
+    font-size: $font14;
+    padding: 10px; 
+    @include respond-to('x-small') {
+       font-size: $font10; 
+    }
+    @include respond-to('xs-small') {
+       font-size: 8px; 
+    }
+    & p{
+        margin: 0;
+    }
+}
+
+
+.footNav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    box-shadow: 0 0 46px rgba(84, 189, 226, 0.39);
+    background: #ffffff;
+    display: none;
+    @include respond-to('medium') {
+        display: block;
+    }
+    
+    & ul{
+        display: flex;
+        & li{
+            width: 100%;
+            text-align: center;
+            & a{
+                padding: 8px 10px 5px 10px;
+                color: #4fc1e6;
+                position: relative;
+                &.active{
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        top: -2px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 80%;
+                        height: 5px;
+                        background: #4fc0e6;
+                    }
+                }
+            }
+            & strong{
+                display: block;
+                @include respond-to('xxx-small') {
+                    height: 34px;
+                }
+                & img {
+                    @include respond-to('xxx-small') {
+                     transform: scale(.8);
+                    }
+                }
+            }
+            & span{
+                display: block;
+                font-size: 18px;
+                @include respond-to('xxx-small') {
+                    font-size: 14px;
+                }
+            }
+            
+        }
+    }
+}
