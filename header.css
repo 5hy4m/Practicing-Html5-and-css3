@@ -1,0 +1,82 @@
+.Header{
+    width: 100%;
+    background-color: #4EC1E6;
+    background-image: url('assets/images/flower_left.png');
+    background-repeat: no-repeat;
+    padding: 40px 0px 40px 0px;
+}
+
+.child_details{
+    padding: 0px 40px;
+}
+
+.classDetails{
+    height: 102px;
+    width: 340px;
+    background-color: white;
+    border-radius: 20px;
+    background-image: url('assets/images/dashboard/circles.png');
+    background-repeat: no-repeat;
+    background-position: 0px 67px;
+    overflow: hidden;
+}
+
+.baby_details{
+    align-items: center;
+}
+
+.babyAge::after,.babyheight::after,.babyweight::after{
+    content:"";
+    align-self: center;
+    margin-left: 30px;
+    width: 0.5px;
+    background: white;
+    height: 40px;
+}
+
+.babyImg{
+    border-radius: 50px;
+    height: 86px;
+    weight: 86px;
+}
+
+.babyAge,.babyheight,.babyweight{
+    margin-left: 30px;
+    height: 65px;
+    color: white;
+}
+
+.babyheight>.col,.babyweight>.col{
+    align-items: center;
+}
+
+.classpack_details{
+    margin-left: 36px;
+    justify-content: center;
+}
+
+.classpack_details>.remaining{
+    color: #E69E9C;
+    font-weight: 600;
+    font-size:13px;
+}
+
+.classpack_details>.expiry{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.classDetails>.book{
+    height:50px;
+    width: 66px;
+    align-self: center;
+    margin-left: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .HeaderContainer{
+        width: 100%;
+        margin: 0px;
+        justify-content: space-evenly;
+    }
+}

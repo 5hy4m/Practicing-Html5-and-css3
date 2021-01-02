@@ -7,15 +7,16 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link href="header_and_violater.css" rel="stylesheet">
+    <link href="navbar_and_violater.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column">
     <!-- Violater & Nav Bar -->
     <div class="violater">
-        <p class ="violater-text">Want to check how your child is progressing? Sign up for a free diagnostic.</p>
+        <p class="violater-text">Want to check how your child is progressing? Sign up for a free diagnostic.</p>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
+    <nav class="navbar p-0 navbar-expand-lg navbar-light d-flex flex-row justify-content-center">
         <div class="container-sm d-flex navcontainer">
             <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,27 +27,27 @@
             </a>
             <div class="desktopview-navbar container-fluid">
                 <ul class="navbar-nav  mb-2 mb-lg-0">
-                    <li class="nav-item" >
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
-                            <img src="assets/images/dashboard/menu/home.png" alt="" >
+                            <img src="assets/images/dashboard/menu/home.png" alt="">
                             Home</a>
                     </li>
-                    <li class="nav-item" >
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
                             <img src="assets/images/dashboard/menu/discover.png" alt="">
                             Discover</a>
                     </li>
-                    <li class="nav-item" >
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
                             <img src="assets/images/dashboard/menu/learn.png" alt="">
                             Learn</a>
                     </li>
-                    <li class="nav-item" >
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
                             <img src="assets/images/dashboard/menu/shop.png" alt="">
                             Shop</a>
                     </li>
-                    <li class="nav-item" >
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">
                             <img src="assets/images/dashboard/menu/growth.png" alt="">
                             Growth</a>
@@ -74,35 +75,75 @@
             <ul class="navbar-nav  mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">
-                        <img src="assets/images/dashboard/menu/home.png" alt="" >
+                        <img src="assets/images/dashboard/menu/home.png" alt="">
                         Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">
-                        <img src="assets/images/dashboard/menu/discover.png" alt="" >
+                        <img src="assets/images/dashboard/menu/discover.png" alt="">
                         Discover</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">
-                        <img src="assets/images/dashboard/menu/learn.png" alt="" >
+                        <img src="assets/images/dashboard/menu/learn.png" alt="">
                         Learn</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">
-                        <img src="assets/images/dashboard/menu/shop.png" alt="" >
+                        <img src="assets/images/dashboard/menu/shop.png" alt="">
                         Shop</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">
-                        <img src="assets/images/dashboard/menu/growth.png" alt="" >
+                        <img src="assets/images/dashboard/menu/growth.png" alt="">
                         Growth</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- Violater & Nav Bar -->
-    <!-- Header Section -->
-    <!-- Header Section -->
+    <div class="centerWrapper">
+        <!-- Header Section -->
+        <section class="Header">
+            <div class="container HeaderContainer">
+                <div class="child_details row">
+                    <div class="col-lg-7 col-sm-12 baby_details d-flex justify-content-start">
+                        <img src="assets/images/dashboard/image.jpg" alt="" class="babyImg">
+                        <div class="babyAge d-flex ">
+                            <div class="col">
+                                <h3>Today Json is</h3>
+                                <h5>3 Years , 4 Months</h5>
+                            </div>
+                        </div>
+                        <div class="babyheight d-flex">
+                            <div class="col">
+                                <h6>Height</h6>
+                                <h4>56.5 cm</h4>
+                            </div>
+                        </div>
+                        <div class="babyweight">
+                            <div class="col">
+                                <h6>Weight</h6>
+                                <h4>13.7 kg</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 classDetails d-flex justify-content-start">
+                        <img src="assets/images/dashboard/book.png" alt="" class="book">
+                        <div class="classpack_details d-flex flex-column">
+                            <div class="remaining">
+                                5 Classes Remaining!
+                            </div>
+                            <div class="expiry">
+                                13/05/2021
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Header Section -->
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>
