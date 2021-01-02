@@ -97,5 +97,19 @@
     .bookfreetrial{
         display: none;
     }
+    .violater>.violater-text{
+        font-size: 9px;
+    }
+    .navbar-brand>.logo{
+        height: 45px;
+        width: 156px;
+        margin-left: 0px;
+    }
+    .navbar-toggler{
+        padding: 0px;
+    }
+    .classDetails{
+        margin-top: 20px;
+    }
 }
 

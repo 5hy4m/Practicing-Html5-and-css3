@@ -4,6 +4,8 @@
     background-image: url('assets/images/flower_left.png');
     background-repeat: no-repeat;
     padding: 40px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .child_details{
@@ -72,11 +74,26 @@
     align-self: center;
     margin-left: 25px;
 }
+.HeaderContainer{
+    justify-content: space-around;
 
+}
+.child_details{
+    padding: 0px;
+    justify-content: space-around;
+}
 @media only screen and (max-width: 1200px) {
     .HeaderContainer{
         width: 100%;
-        margin: 0px;
-        justify-content: space-evenly;
+        padding: 0px;
+        justify-content: space-around;
+        display: flex;
+    }
+    .child_details{
+        padding: 0px;
+        justify-content: space-around;
+    }
+    .baby_details{
+        width: 595px;
     }
 }
