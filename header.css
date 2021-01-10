@@ -27,7 +27,7 @@
     align-items: center;
 }
 
-.babyAge::after,.babyheight::after,.babyweight::after{
+.babyAge::after,.babyheight::after{
     content:"";
     align-self: center;
     width: 0.5px;
@@ -135,11 +135,14 @@ div>h5{
     display: flex;
     width: 129px;
  }
+ .babyheight>.col,.babyweight{
+    align-self: center;
+}
  div>h3{
      font-size: 18px;
  }
  div>h5{
-     font-size: 12px;
+     font-size: 14px;
  }
  .babyAge{
      margin: 0px;
@@ -155,7 +158,6 @@ div>h5{
 }
 .babyheight{
     width: 94px;
-
 }
 }
 
