@@ -1,0 +1,27 @@
+.tabs > .nav-item{
+    border-bottom: 2px;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    border-color: rgb(221, 221, 221);
+    border-left: none;
+    width: 150px;
+}
+
+.tabs-link{
+    border: none !important;
+    text-align:center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4EC1E6 !important;
+    background-color: white !important;
+}
+
+.tabs{
+    border: none;
+    justify-content: center;
+}
+
+.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+    border: none;
+}
