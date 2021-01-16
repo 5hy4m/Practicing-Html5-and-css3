@@ -13,7 +13,6 @@
     display: flex;
     justify-content: center;
     margin: 0px auto;
-    width: 1100px;
 }
 .cardscontainer{
     /* display: flex;
@@ -27,7 +26,7 @@
 }
 
 .slicker>.slick-list>.slick-track{
-    width: 100% !important; 
+    width: 100% ; 
 }
 
 .slicker>.slick-list>.slick-track>.slick-slide{
@@ -173,4 +172,10 @@
 
 .rosepill{
     background-color: #FFA492;
+}
+
+@media only screen and (max-width: 420px) {
+    .slicker>.slick-list{
+        padding: 50px 3px;
+    }
 }
