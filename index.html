@@ -8,8 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="navbar_and_violater.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
     <link href="header.css" rel="stylesheet">
     <link href="tabcardsslider.css" rel="stylesheet">
+    <link href="assets/slick/slick.css" rel="stylesheet">
 </head>
 
 <body class="w-100">
@@ -107,109 +109,382 @@
         <!-- Header Section -->
         <section class="Header">
             <div class="container child_details HeaderContainer d-flex">
-                <!-- <div class="child_details d-flex row w-100"> -->
-                    <div class="baby_details d-flex justify-content-start">
-                        <div class ='babyImg'>
-                            <img src="assets/images/dashboard/image.jpg" alt="" class="babyImg">
-                        </div>
-                        <div class="details_container d-flex">
-                            <div class="babyAge d-flex">
-                                <div class="col">
-                                    <h3>Today Json is</h3>
-                                    <h5>3 Years , 4 Months</h5>
-                                </div>
-                            </div>
-                            <div class="babyheight d-flex">
-                                <div class="col">
-                                    <h6>Height</h6>
-                                    <h4>56.5 cm</h4>
-                                </div>
-                            </div>
-                            <div class="babyweight d-flex">
-                                <div class="col">
-                                    <h6>Weight</h6>
-                                    <h4>13.7 kg</h4>
-                                </div>
+                <div class="baby_details d-flex justify-content-start">
+                    <div class='babyImg'>
+                        <img src="assets/images/dashboard/image.jpg" alt="" class="babyImg">
+                    </div>
+                    <div class="details_container d-flex">
+                        <div class="babyAge d-flex">
+                            <div class="col">
+                                <h3>Today Json is</h3>
+                                <h5>3 Years , 4 Months</h5>
                             </div>
                         </div>
+                        <div class="babyheight d-flex">
+                            <div class="col">
+                                <h6>Height</h6>
+                                <h4>56.5 cm</h4>
+                            </div>
+                        </div>
+                        <div class="babyweight d-flex">
+                            <div class="col">
+                                <h6>Weight</h6>
+                                <h4>13.7 kg</h4>
+                            </div>
+                        </div>
+                    </div>
 
-                    </div>
-                    <div class="classDetails d-flex justify-content-start">
-                        <img src="assets/images/dashboard/book.png" alt="" class="book">
-                        <div class="classpack_details d-flex flex-column">
-                            <div class="remaining">
-                                5 Classes Remaining!
-                            </div>
-                            <div class="expiry">
-                                13/05/2021
-                            </div>
+                </div>
+                <div class="classDetails d-flex justify-content-start">
+                    <img src="assets/images/dashboard/book.png" alt="" class="book">
+                    <div class="classpack_details d-flex flex-column">
+                        <div class="remaining">
+                            5 Classes Remaining!
+                        </div>
+                        <div class="expiry">
+                            13/05/2021
                         </div>
                     </div>
-                <!-- </div> -->
+                </div>
             </div>
         </section>
         <!-- Header Section -->
         <section class="tabcardsslider">
             <div class="container">
-                <ul id="pills-tab" role="tablist" class="tabs nav nav-pills">
-                    <li class="nav-item" role="presentation">
-                    <a id="pills-classes-tab" class="tabs-link nav-link active" href="#pills-classes">Classes</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a id="pills-activities-tab" class="tabs-link nav-link active" href="#pills-activities">Activities</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a id="pills-articles-tab" class="tabs-link nav-link active" href="#pills-articles">Articles</a>
-                    </li>
-                </ul>
-                <div class="tabsContainer" id="pills-tabContent">
-                    <div id="" class="tab-pane show active " role="tabpanel" data-ride="carousel" aria-labelledby="pills-classes-tab">
-                        <div id="pills-classes" class="carousel-inner">
-                            <!-- <div class="carousel-item active"> -->
-                                <img class="d-block w-100" src="assets/images/dashboard/image.jpg" alt="First slide">
+                <div class="Day-slider">
+                    <div class="jumbotron">
+                        <div class="yrmon">
+                            August 2020
+                        </div>
+                        <div class="yearSlider">
+                            <div class="items">
+                                <span>1</span>
                             </div>
-                            <div  class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/dashboard/image.jpg" alt="Second slide">
+                            <div class="items">
+                                <span>2</span>
                             </div>
-                            <div id="pills-articles" class="carousel-item">
-                                <img class="d-block w-100" src="assets/images/dashboard/image.jpg" alt="Third slide">
+                            <div class="items">
+                                <span>3</span>
+                            </div>
+                            <div class="items">
+                                <span>4</span>
+                            </div>
+                            <div class="items">
+                                <span>5</span>
+                            </div>
+                            <div class="items">
+                                <span>6</span>
+                            </div>
+                            <div class="items">
+                                <span>7</span>
+                            </div>
+                            <div class="items">
+                                <span>8</span>
+                            </div>
+                            <div class="items">
+                                <span>9</span>
                             </div>
                         </div>
                     </div>
-                    <div id="" class="tab-pane " role="tabpanel"  aria-labelledby="pills-activities-tab">
-                        <div id="pills-activities" class="carousel-inner">
-                            <!-- <div class="carousel-item active"> -->
-                                <img class="d-block w-100" src="assets/images/dashboard/img01.jpg" alt="First slide">
-                            <!-- </div>
-                            <div class="carousel-item"> -->
-                                <img class="d-block w-100" src="assets/images/dashboard/img01.jpg" alt="Second slide">
-                            <!-- </div>
-                            <div class="carousel-item"> -->
-                                <img class="d-block w-100" src="assets/images/dashboard/img01.jpg" alt="Third slide">
-                            <!-- </div> -->
-                        </div> 
+                </div>
+                <div class="tabsContainer">
+                    <div class=" tab-content" id="pills-tabContent">
+                        <ul class="tabs nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="tabs-link nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    href="#pills-home" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Classes</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="tabs-link nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                    aria-selected="false">Activities</a>
+                            </li>
+                            <li class=" nav-item" role="presentation">
+                                <a class="tabs-link nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    href="#pills-contact" role="tab" aria-controls="pills-contact"
+                                    aria-selected="false">Articles</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div id="" class="tab-pane " role="tabpanel"  aria-labelledby="pills-articles-tab">
-                        <!-- <div class="carousel-inner"> -->
-                            <!-- <div class="carousel-item active"> -->
-                                <img class="d-block w-100" src="assets/images/dashboard/image.jpg" alt="First slide">
-                            <!-- </div> -->
-                            <!-- <div class="carousel-item"> -->
-                                <img class="d-block w-100" src="assets/images/dashboard/image.jpg" alt="Second slide">
-                            <!-- </div> -->
-                            <!-- <div class="carousel-item"> -->
-                                <img class="d-block w-100" src="assets/images/dashboard/image.jpg" alt="Third slide">
-                            <!-- </div> -->
-                        <!-- </div> -->
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane  fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">
+                            <div class="cardscontainer">
+                                <div class="slicker">
+                                    <div class="card">
+                                        <img class="card-img-top" src="assets/images/dashboard/img01.jpg" alt="Card image cap">
+                                        <div class = "spandetailsContainer">
+                                            <span class="spandetails"> 
+                                                <img src="assets/images/dashboard/videoicon.png" alt="" class="videocon">
+                                                5 Sessions
+                                                <div class="bby">
+                                                    <img src="assets/images/dashboard/babyicon.png" alt="" class="bbycon">
+                                                    3-5
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Brain Builders</h5>
+                                            <p class="card-text">By Shyam Kumar qwertyuiop</p>
+                                            <div class="cardcategorty">
+                                                Cognitive  |  Social
+                                            </div>
+                                            <span class="line"></span>
+                                            <div class="PILL yellowpill">
+                                                Playtime
+                                            </div>
+                                            <div class="PILL rosepill">
+                                                Crafts
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="assets/images/dashboard/img02.jpg" alt="Card image cap">
+                                        <div class = "spandetailsContainer">
+                                            <span class="spandetails"> 
+                                                <img src="assets/images/dashboard/videoicon.png" alt="" class="videocon">
+                                                5 Sessions
+                                                <div class="bby">
+                                                    <img src="assets/images/dashboard/babyicon.png" alt="" class="bbycon">
+                                                    3-5
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Brain Builders</h5>
+                                            <p class="card-text">By Shyam Kumar qwertyuiop</p>
+                                            <div class="cardcategorty">
+                                                Cognitive  |  Social
+                                            </div>
+                                            <span class="line"></span>
+                                            <div class="PILL yellowpill">
+                                                Playtime
+                                            </div>
+                                            <div class="PILL rosepill">
+                                                Crafts
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="assets/images/dashboard/img03.jpg" alt="Card image cap">
+                                        <div class = "spandetailsContainer">
+                                            <span class="spandetails"> 
+                                                <img src="assets/images/dashboard/videoicon.png" alt="" class="videocon">
+                                                5 Sessions
+                                                <div class="bby">
+                                                    <img src="assets/images/dashboard/babyicon.png" alt="" class="bbycon">
+                                                    3-5
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Brain Builders</h5>
+                                            <p class="card-text">By Shyam Kumar qwertyuiop</p>
+                                            <div class="cardcategorty">
+                                                Cognitive  |  Social
+                                            </div>
+                                            <span class="line"></span>
+                                            <div class="PILL yellowpill">
+                                                Playtime
+                                            </div>
+                                            <div class="PILL rosepill">
+                                                Crafts
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                            <div class="cardscontainer">
+                                <div class="slicker">
+                                    <div class="card">
+                                        <img class="card-img-top" src="assets/images/dashboard/img09.jpg" alt="Card image cap">
+                                        <div class = "spandetailsContainer">
+                                            <span class="spandetails"> 
+                                                <img src="assets/images/dashboard/videoicon.png" alt="" class="videocon">
+                                                5 Sessions
+                                                <div class="bby">
+                                                    <img src="assets/images/dashboard/babyicon.png" alt="" class="bbycon">
+                                                    3-5
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Brain Builders</h5>
+                                            <p class="card-text">By Shyam Kumar qwertyuiop</p>
+                                            <div class="cardcategorty">
+                                                Cognitive  |  Social
+                                            </div>
+                                            <span class="line"></span>
+                                            <div class="PILL yellowpill">
+                                                Playtime
+                                            </div>
+                                            <div class="PILL rosepill">
+                                                Crafts
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="assets/images/dashboard/img02.jpg" alt="Card image cap">
+                                        <div class = "spandetailsContainer">
+                                            <span class="spandetails"> 
+                                                <img src="assets/images/dashboard/videoicon.png" alt="" class="videocon">
+                                                5 Sessions
+                                                <div class="bby">
+                                                    <img src="assets/images/dashboard/babyicon.png" alt="" class="bbycon">
+                                                    3-5
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Brain Builders</h5>
+                                            <p class="card-text">By Shyam Kumar qwertyuiop</p>
+                                            <div class="cardcategorty">
+                                                Cognitive  |  Social
+                                            </div>
+                                            <span class="line"></span>
+                                            <div class="PILL yellowpill">
+                                                Playtime
+                                            </div>
+                                            <div class="PILL rosepill">
+                                                Crafts
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="assets/images/dashboard/img03.jpg" alt="Card image cap">
+                                        <div class = "spandetailsContainer">
+                                            <span class="spandetails"> 
+                                                <img src="assets/images/dashboard/videoicon.png" alt="" class="videocon">
+                                                5 Sessions
+                                                <div class="bby">
+                                                    <img src="assets/images/dashboard/babyicon.png" alt="" class="bbycon">
+                                                    3-5
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Brain Builders</h5>
+                                            <p class="card-text">By Shyam Kumar qwertyuiop</p>
+                                            <div class="cardcategorty">
+                                                Cognitive  |  Social
+                                            </div>
+                                            <span class="line"></span>
+                                            <div class="PILL yellowpill">
+                                                Playtime
+                                            </div>
+                                            <div class="PILL rosepill">
+                                                Crafts
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">
+                            <div class="cardscontainer">
+                                <div class="slicker">
+                                    <div class="card">
+                                        <img class="card-img-top" src="assets/images/dashboard/img09.jpg" alt="Card image cap">
+                                        <div class = "spandetailsContainer">
+                                            <span class="spandetails"> 
+                                                <img src="assets/images/dashboard/videoicon.png" alt="" class="videocon">
+                                                5 Sessions
+                                                <div class="bby">
+                                                    <img src="assets/images/dashboard/babyicon.png" alt="" class="bbycon">
+                                                    3-5
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Brain Builders</h5>
+                                            <p class="card-text">By Shyam Kumar qwertyuiop</p>
+                                            <div class="cardcategorty">
+                                                Cognitive  |  Social
+                                            </div>
+                                            <span class="line"></span>
+                                            <div class="PILL yellowpill">
+                                                Playtime
+                                            </div>
+                                            <div class="PILL rosepill">
+                                                Crafts
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="assets/images/dashboard/img09.jpg" alt="Card image cap">
+                                        <div class = "spandetailsContainer">
+                                            <span class="spandetails"> 
+                                                <img src="assets/images/dashboard/videoicon.png" alt="" class="videocon">
+                                                5 Sessions
+                                                <div class="bby">
+                                                    <img src="assets/images/dashboard/babyicon.png" alt="" class="bbycon">
+                                                    3-5
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Brain Builders</h5>
+                                            <p class="card-text">By Shyam Kumar qwertyuiop</p>
+                                            <div class="cardcategorty">
+                                                Cognitive  |  Social
+                                            </div>
+                                            <span class="line"></span>
+                                            <div class="PILL yellowpill">
+                                                Playtime
+                                            </div>
+                                            <div class="PILL rosepill">
+                                                Crafts
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img class="card-img-top" src="assets/images/dashboard/img03.jpg" alt="Card image cap">
+                                        <div class = "spandetailsContainer">
+                                            <span class="spandetails"> 
+                                                <img src="assets/images/dashboard/videoicon.png" alt="" class="videocon">
+                                                5 Sessions
+                                                <div class="bby">
+                                                    <img src="assets/images/dashboard/babyicon.png" alt="" class="bbycon">
+                                                    3-5
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Brain Builders</h5>
+                                            <p class="card-text">By Shyam Kumar qwertyuiop</p>
+                                            <div class="cardcategorty">
+                                                Cognitive  |  Social
+                                            </div>
+                                            <span class="line"></span>
+                                            <div class="PILL yellowpill">
+                                                Playtime
+                                            </div>
+                                            <div class="PILL rosepill">
+                                                Crafts
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            <div>
+            </div>
         </section>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick_init.js"></script>
 </body>
 
 </html>
