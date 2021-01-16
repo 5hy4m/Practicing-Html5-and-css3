@@ -1,13 +1,16 @@
-.recommended{
-    background-color: #F1F1F1;
+.recommended>.container{
     height: 1000px;
     display: grid;
-    justify-content: center;
+    grid-template-columns: 1fr;
+}
+.recommended{
+    background-color: #F1F1F1;
 }
 
 .referalBox{
     position: relative;
     bottom: 67px;
+    left: 33%;
     height: 116px;
     width: 432px;
     padding: 31px;
@@ -45,4 +48,38 @@
     font-weight: 300;
     color: grey;
     font-size: 21px;
+}
+
+.recommendedtext{
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 1200px) {
+    .referalBox{
+        left: 33%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .referalBox{
+        left: 29%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .referalBox{
+        left: 19%;
+    }
+}
+@media only screen and (max-width: 769px) {
+    .referalBox{
+        left: 9%;
+    }  
+}
+@media only screen and (max-width: 570px) {
+    .referalBox{
+        left: 3%;
+        width: 313px;
+    }
+.referalBox>.span{
+    font-size: 14px;
+}
 }
