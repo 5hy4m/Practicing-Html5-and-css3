@@ -1,7 +1,8 @@
-.recommended>.container{
-    height: 1000px;
+.recommended>.container-fluid{
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 100px 300px;
+    margin-bottom: 500px;
 }
 .recommended{
     background-color: #F1F1F1;
@@ -20,7 +21,7 @@
     box-shadow: 0 0 32px 0 rgba(84, 189, 226, 0.36);
 }
 
-.referalbutton{
+.referalbutton,.viewallbutton{
     border: none;
     background-color: #4EC1E6;
     border-radius: 50px;
@@ -32,6 +33,13 @@
     width: 98px;
     display: inline-flex;
     margin-top: 12px;
+}
+.viewallbutton{
+    width: 148px;
+    height: 25px;
+    align-items: center;
+    justify-content: start;
+    display: flex;
 }
 
 .referalBox>.span{
@@ -53,6 +61,20 @@
 .recommendedtext{
     font-weight: 300;
 }
+.seeall{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: rgb(166, 166, 166);
+}
+
+.recommendedElements,.rightelements{
+    display: inline-flex;
+}
+.recommendedElements{
+    justify-content: space-evenly;
+}
+
 
 @media only screen and (min-width: 1200px) {
     .referalBox{
