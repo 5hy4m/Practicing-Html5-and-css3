@@ -1,8 +1,48 @@
 .recommended{
     background-color: #F1F1F1;
     height: 1000px;
+    display: grid;
+    justify-content: center;
 }
 
 .referalBox{
-    background-attachment: white;
+    position: relative;
+    bottom: 67px;
+    height: 116px;
+    width: 432px;
+    padding: 31px;
+    background-color: white;
+    display: flex;
+    border-radius:25px;
+    box-shadow: 0 0 32px 0 rgba(84, 189, 226, 0.36);
+}
+
+.referalbutton{
+    border: none;
+    background-color: #4EC1E6;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    padding: 0px 10px;
+    height: 21px;
+    width: 98px;
+    display: inline-flex;
+    margin-top: 12px;
+}
+
+.referalBox>.span{
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+}
+.kinderflower{
+    margin-right: 31px;
+}
+
+.referalBox>.span{
+    width: 100%;
+    font-weight: 300;
+    color: grey;
+    font-size: 21px;
 }
