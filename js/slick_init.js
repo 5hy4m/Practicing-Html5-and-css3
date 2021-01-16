@@ -47,11 +47,11 @@ $(document).ready(function(){
       infinite: false,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1199,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
-            dots: true,
+            dots: false,
           }
         },
         {
