@@ -113,7 +113,7 @@
     }  
       
     .recommended>.container{
-        grid-template-rows: 200px 500px;
+        grid-template-rows: 200px 600px;
     }
     .recommend1>.card{
         width: 242px;
@@ -131,6 +131,12 @@
     }
     .recommendedElements{
         flex-direction: column;
+    }
+    .recommend2{
+        display: none;
+    }
+    .recommend1,.recommendedtext{
+        align-self: center;
     }
 }
 @media only screen and (max-width: 467px) {
